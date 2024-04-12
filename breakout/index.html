@@ -3,38 +3,17 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>2D Breakout Game</title>
+    <title>Breakout Game</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        h1 {
-            margin-bottom: 20px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    
 </head>
 
 <body>
     <h1><a class="button" href="https://diogo.celferi.com/">🏠 Home</a></h1>
+    <button class="button" id="restart-btn">🔁 Restart Game</button>
     <h1 id="score">Score: 0</h1>
     <div class="grid"></div>
+    <h1 id="info-msg">Press a and d to move</h1>
 
     <script src="index.js"></script>
 </body>
