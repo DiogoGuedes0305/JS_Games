@@ -21,7 +21,7 @@ function startGame() {
 }
 
 function moveMole() {
-  timerId = setInterval(randomSquare, 500)
+  timerId = setInterval(randomSquare, 600)
 }
 
 function randomSquare() {
