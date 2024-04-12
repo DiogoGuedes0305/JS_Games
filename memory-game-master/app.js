@@ -53,7 +53,7 @@ const resultDisplay = document.querySelector('#result')
 
 let cardsChosen = []
 let cardsChosenIds = []
-const cardsWon = []
+let cardsWon = []
 let score = 0
 
 function createBoard() {
@@ -111,12 +111,15 @@ function flipCard() {
     setTimeout(checkMatch, 500)
   }
 }
+
 // Reset the game
-const resetButton = document.querySelector('#reset')
-resetButton.addEventListener('click', resetGame)
+
+document.addEventListener('DOMContentLoaded', function() {
+  const resetButton = document.querySelector('#reset');
+  resetButton.addEventListener('click', resetGame);
+});
 
 function resetGame() {
-  alert('The game has been reset')
   cardsChosen = []
   cardsChosenIds = []
   cardsWon = []
@@ -124,6 +127,7 @@ function resetGame() {
   resultDisplay.textContent = 0
   gridDisplay.innerHTML = ''
   createBoard()
+  alert('The game has been reset')
 }
 
 
