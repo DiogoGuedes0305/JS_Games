@@ -3,16 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Rock Paper Scissors Tutorial</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+  
+      h1 {
+        margin-bottom: 20px;
+      }
+  
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+  
+      .button:hover {
+        background-color: #0056b3;
+      }
+    </style>
   </head>
   <body>
-
+    <h1><a class="button" href="https://diogo.celferi.com/">🏠 Home</a></h1>
     <h2>💻Computer Choice: <span id="computer-choice"></span></h2>
     <h2>😀Your Choice: <span id="user-choice"></span></h2>
     <h2><span id="result"></span></h2>
 
-    <button id="rock">🗻rock</button>
-    <button id="paper">🧾paper</button>
-    <button id="scissors">✂scissors</button>
+    <button class="button" id="rock">🗻rock</button>
+    <button class="button" id="paper">🧾paper</button>
+    <button class="button" id="scissors">✂scissors</button>
 
     <script src="app.js" charset="utf-8"></script>
   </body>
