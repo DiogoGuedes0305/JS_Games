@@ -126,6 +126,7 @@ function resetGame() {
   score = 0
   resultDisplay.textContent = 0
   gridDisplay.innerHTML = ''
+  cardArray.sort(() => 0.5 - Math.random())
   createBoard()
   alert('The game has been reset')
 }
