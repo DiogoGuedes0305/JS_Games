@@ -45,11 +45,10 @@ const cardArray = [
   }
 ]
 // Randomize the order of the cards in the array
-// console.log(cardArray)
 cardArray.sort(() => 0.5 - Math.random())
 
-const gridDisplay = document.querySelector('#grid')
-const resultDisplay = document.querySelector('#result')
+let gridDisplay = document.querySelector('#grid')
+let resultDisplay = document.querySelector('#result')
 
 let cardsChosen = []
 let cardsChosenIds = []
@@ -127,6 +126,8 @@ function resetGame() {
   resultDisplay.textContent = 0
   gridDisplay.innerHTML = ''
   cardArray.sort(() => 0.5 - Math.random())
+  gridDisplay = document.querySelector('#grid')
+  resultDisplay = document.querySelector('#result')
   createBoard()
   alert('The game has been reset')
 }
